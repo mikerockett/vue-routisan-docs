@@ -1,5 +1,9 @@
 # Introduction
 
+::: warning
+Vue Routisan 3 is currently in **alpha**. Whilst suitable for production, we recommend you wait for a release-candidate or the stable release of 3.0.
+:::
+
 Routisan provides you with a friendlier way to declare route definitions for Vue Router. Inspired by Laravel, it uses chained calls to build up your routes, allowing you to group and nest as deeply as you like.
 
 ```js
