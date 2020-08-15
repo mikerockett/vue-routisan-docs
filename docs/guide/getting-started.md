@@ -3,8 +3,8 @@
 ## Install with NPM or Yarn
 
 ```shell
-$ npm i vue-routisan
-$ # or yarn add vue-routisan
+$ npm i vue-routisan@next
+$ # or yarn add vue-routisan@next
 ```
 
 ## Upgrading from v2
