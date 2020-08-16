@@ -22,7 +22,7 @@ Route.group({ prefix: 'account', name: 'account' }, () => {
 })
 ```
 
-This is a relatively complex setup that would otherwise be quite verbose without the help of Routisan, which allows an infinite depth. It also knows to not apply prefixes where they are not needed. Specifically, this means that child routes within a group will not attain that group’s prefix, as VueRoute takes care of that part for you.
+This is a relatively complex setup that would otherwise be quite verbose without the help of Routisan, which allows an infinite depth. It also knows to not apply prefixes where they are not needed. Specifically, this means that child routes within a group will not attain that group’s prefix, as VueRouter takes care of that part for you.
 
 Once the compiled routes have been passed to VueRouter, you’d get the routes you expect:
 

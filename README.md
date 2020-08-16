@@ -1,13 +1,9 @@
-# vue-routisan-docs
+<img src="https://rockett.pw/git-assets/vue-routisan/logo.svg" alt="Vue Routisan" width="250">
 
-> Vue Routisan 3 Docs
+---
 
-## Development
+# Documentation Repo
 
-```bash
-yarn dev
-yarn build
-```
+These are the official docs for Vue Routisan 3. If you’d like to contribute them, please feel free to open a PR.
 
-For more details, please head VuePress's [documentation](https://v1.vuepress.vuejs.org/).
-
+All pushes into the master branch will automatically be deployed to https://vue-routisan.rockett.pw, thanks to [Vercel](https://vercel.com).
