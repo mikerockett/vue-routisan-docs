@@ -30,5 +30,5 @@ This produces an array of routes in the format Vue Router expects to see, and fo
 | Path              | Component                                    | Name                   |
 | ----------------- | -------------------------------------------- | ---------------------- |
 | /blog             | Blog/Posts (rendered within Blog)            | blog.posts             |
-| /blog/:post/edit  | Blog/Posts/Edit (rednered within Blog/Post)  | blog.single-post.edit  |
-| /blog/:post/stats | Blog/Posts/Stats (rednered within Blog/Post) | blog.single-post.stats |
+| /blog/:post/edit  | Blog/Posts/Edit (rendered within Blog/Post)  | blog.single-post.edit  |
+| /blog/:post/stats | Blog/Posts/Stats (rendered within Blog/Post) | blog.single-post.stats |
