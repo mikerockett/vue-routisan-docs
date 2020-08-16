@@ -42,6 +42,7 @@ class AuthenticationGuard extends Guard {
 In order to apply a guard to a route, it must first be registered with the Factory:
 
 ```js
+import { Factory } from 'vue-routisan'
 import { AuthenticationGuard } from '@/routing/guards/authentication-guard'
 
 Factory.withGuards({
@@ -73,6 +74,8 @@ Route.view('change-password', 'ChangePassword').guard('auth') // if you register
 If you have registered and would like to use more than one guard, simply pass each one as an additional argument:
 
 ```js
+import { Factory, Route } from 'vue-routisan'
+
 Factory.withGuards({
   'auth': AuthenticationGuard,
   MustBeSuper
