@@ -1,7 +1,7 @@
 const { description } = require('../../package')
 
 module.exports = {
-  title: 'Vue Routisan 3 Alpha',
+  title: 'Vue Routisan 3 Beta',
   description,
 
   head: [
