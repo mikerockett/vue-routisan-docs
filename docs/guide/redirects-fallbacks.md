@@ -38,7 +38,3 @@ Given that Routisan does not force a specific version of Vue Router (it does not
 
 At a later stage, Routisan may introduce Vue Router 4 as a peer dependency, at which time `fallback` may become available again.
 :::
-
-```js
-Route.view('users/*', 'UserRouteNotFound')
-```
