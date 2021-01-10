@@ -10,9 +10,13 @@ When using curlies, please be aware that joining two parameters together will re
 
 ## Advanced Pattern Matching
 
-VueRouter supports all the patterns and features that [path-to-regexp](https://github.com/pillarjs/path-to-regexp/tree/v1.7.0#parameters) provides. This includes the ability to add regular expressions to your routes.
+Routisan inherintly supports all the patterns and features that Vue Router makes available. For Vue Router < 4, [path-to-regexp](https://github.com/pillarjs/path-to-regexp/tree/v1.7.0#parameters) is used to parse route parameters. From Vue Router 4 onwards, a built-in parser is provided, resulting in slight changes in behaviour.
 
 One such example, though uncommon, is the catch-anything `(.*)`. To make this a little more clear, you can use `{all}` in place of this expression. The behaviour doesn’t change, however – you cannot access `all` as a parameter.
+
+::: warning
+If you are using Vue Router 4 and have opted to use `{all}`, you now need to name the parameter as asterisk wildcards are no longer supported on their own. For example, `/something/{all}` would become `/something/:_{all}`. If Routisan introduces Vue Router 4 as a peer dependency, it will automatically convert `{all}` to `:_(.*)*` on your behalf (this would also solve the [fallback](redirects-fallbacks.md) issue).
+:::
 
 Additional notes:
 

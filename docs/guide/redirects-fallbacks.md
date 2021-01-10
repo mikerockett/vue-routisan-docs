@@ -24,13 +24,20 @@ Route.redirect('home', (to) => resolveLocationOrPath())
 
 ## Fallbacks and Asterisks
 
-Akin to a 404, a fallback route is simply registered in the case a requested route does not exist. These can be registered using the `fallback()` helper method:
+To register a fallback route, a named regex-based parameter must be specified. This may be done with the usual colon syntax, or the alternative curly syntax:
 
 ```js
-Route.fallback('ViewNotFound')
+Route.view('/:fallback(.*)*', 'ViewNotFound') // or
+Route.view('/{fallback}(.*)*', 'ViewNotFound')
 ```
 
-However, If you need dedicated fallbacks for different type of routes, you'll need to stick to the `view` method and use the `*` wildcard, as prescribed by VueRouter:
+::: tip Fallback Helper Removed
+Before Routisan 3 Beta 2, a fallback option was introduced to provide a clean syntax for defining a catch-all route. However, Vue Router 4 removed catch-alls and replaced them with named regex-based paramaters.
+
+Given that Routisan does not force a specific version of Vue Router (it does not depend on it, nor does it make it a peer dependency), it is unable to determine the correct course of action for fallback routes.
+
+At a later stage, Routisan may introduce Vue Router 4 as a peer dependency, at which time `fallback` may become available again.
+:::
 
 ```js
 Route.view('users/*', 'UserRouteNotFound')
