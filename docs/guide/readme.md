@@ -1,8 +1,8 @@
+# Introduction
+
 ::: warning Beta
 This documentation is for Vue Routisan 3, which is currently in **beta**. Whilst suitable for production, we recommend you wait for the initial stable release. To see the docs for v2, head over to the [2.x tag on GitHub](https://github.com/mikerockett/vue-routisan/tree/2.x).
 :::
-
-# Introduction
 
 Vue Routisan provides you with a friendlier way to declare route definitions for Vue Router. Inspired by Laravel, it uses chained calls to build up your routes, allowing you to group and nest as deeply as you like.
 
