@@ -39,7 +39,6 @@ module.exports = {
             'grouping-routes',
             'grouping-and-nesting-routes',
             'navigation-guards',
-            'definition-helpers',
           ]
         }
       ],

@@ -54,7 +54,7 @@ If you would like to alias the name of the guard to something shorter, you can p
 
 ```js
 Factory.withGuards({
-  'auth': AuthenticationGuard
+  auth: AuthenticationGuard
 })
 ```
 
@@ -77,7 +77,7 @@ If you have registered and would like to use more than one guard, simply pass ea
 import { Factory, Route } from 'vue-routisan'
 
 Factory.withGuards({
-  'auth': AuthenticationGuard,
+  auth: AuthenticationGuard,
   MustBeSuper
 })
 

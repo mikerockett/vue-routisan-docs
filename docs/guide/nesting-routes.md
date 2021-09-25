@@ -15,8 +15,12 @@ Route.view('account', 'AccountView').children(() => {
 
 Here, `AccountView` would be the view that contains the `<router-view />` for child routes.
 
-::: tip
+::: tip Consistency Note
 **Leading slashes** will be removed from child routes, otherwise the route path above would simply be `/emails`, not `/account/emails`. The aim here is to compile routes according to natural expectations of the tree-structure provided.
+:::
+
+::: tip A note about nested child roots
+Child Roots (`'/'`) will be converted to empty strings to ensure the paths do not become absolute roots, ie `app.test/`. Whilst this feature is there by design in Vue Router 4, it is not supported by Routisan as it does not honour the natural expecations of the tree-structure.
 :::
 
 ## Cascading Names

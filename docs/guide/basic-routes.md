@@ -15,7 +15,7 @@ When you use nested routes, the leading slashes will automatically be omitted �
 
 ## Named Views
 
-If you’re using [named views](https://router.vuejs.org/guide/essentials/named-views.html), you’ll want to declare additional views that VueRouter will render. This can be done with the optional third argument, `additionalViews`:
+If you’re using [named views](https://router.vuejs.org/guide/essentials/named-views.html), you’ll want to declare additional views that Vue Router will render. This can be done with the optional third argument, `additionalViews`:
 
 ```js
 Route.view('about', 'About', {
@@ -34,7 +34,11 @@ Support for [named routes](https://router.vuejs.org/guide/essentials/named-route
 Route.view('account', 'ManageAccount').name('manage-account')
 ```
 
-To expand on this functionality, Routisan introduces similar behaviour that comes from Laravel’s router, where nested names are automatically cascaded, using the character-separator of your choice (defaults to a `.`). Unlike Laravel, however, you do not need to suffix the parent name with the separator – this will be done for you. More on this in the “Nesting Routes” section.
+To expand on this functionality, Routisan introduces similar behaviour that comes from Laravel’s router, where nested names are automatically cascaded, using the character-separator of your choice (defaults to a `.`).
+
+::: tip
+Unlike Laravel, however, you do not need to suffix the parent name with the separator – this will be done for you. More on this in the “Nesting Routes” section.
+:::
 
 If you’d like to use a different character-separator, you can define that character in the Factory:
 
@@ -44,10 +48,14 @@ Factory.withNameSeparator('-')
 
 ## Aliasing Routes
 
-To make a route accessible from two URIs, simply use the `alias()` method on an existing Route instance:
+To make a route accessible from two URIs, simply use the `alias()` method on an existing Route instance.
 
 ```js
-Route('about', 'About').alias('about-us')
+Route.view('about', 'About').alias('about-us')
 ```
 
 > The `About` view will now be available to both `/about` and `/about-us`.
+
+::: warning
+If you intend for your app to be served as a website, and SEO is important to you, it isn’t recommended to do this. Aliases are most often used in apps where a route may have changed, but the legacy route needs to stick around for a while.
+:::

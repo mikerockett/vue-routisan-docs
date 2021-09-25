@@ -8,8 +8,8 @@ features:
 - title: Declarative Routing
   details: A Fluent interface for defining routes.
 - title: Route Grouping
-  details: Like nesting, but also no.
-- title: Promise-based Guards
-  details: I pledge to keep them routes safe.
+  details: A loved feature in Laravel, now in Vue.
+- title: Promise Guards
+  details: I  pledge to keep them routes safe.
 footer: by Mike Rockétt
 ---

@@ -1,6 +1,6 @@
 # Grouping Routes
 
-VueRouter doesn’t understand the concept of grouping routes – it only knows how to nest. By providing an abstraction layer on top of VueRouter, we can add the ability to group routes, which allows you to set names, prefixes, and guards (more on that to follow) for each route declared in the callback passed to `group()` on an existing Route instance.
+Vue Router doesn’t understand the concept of grouping routes – it only knows how to nest. By providing an abstraction layer on top of Vue Router, we can add the ability to group routes, which allows you to set names, prefixes, and guards (more on that to follow) for each route declared in the callback passed to `group()` on an existing Route instance.
 
 ## Defining a Group
 

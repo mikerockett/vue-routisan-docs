@@ -2,7 +2,7 @@
 
 ## Alternative Curly Syntax
 
-When adding paramaters to routes in VueRouter, you are limited to the `:colon` format. In making Routisan align with Laravel’s router a little more, you can now also use the `{curly}` format.
+When adding paramaters to routes in Vue Router, you are limited to the `:colon` format. In making Routisan align with Laravel’s router a little more, you can now also use the `{curly}` format.
 
 When using curlies, please be aware that joining two parameters together will result in their separation into two segments. As an example, `{a}{b}` will be compiled to `:a/:b`. This will not happen when using the colon syntax, however, as that would be a destructive change at router-level.
 
