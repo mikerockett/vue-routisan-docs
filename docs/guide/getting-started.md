@@ -26,7 +26,7 @@ import { Route, Factory } from 'vue-routisan'
 import Home from './pages/Home.vue'
 
 // Define your routes…
-Route.view('/', 'Home)
+Route.view('/', Home)
 
 // Export a new router with Routisan’s routes applied.
 export const router = new Router({
@@ -44,7 +44,7 @@ import { Route, Factory } from 'vue-routisan'
 import Home from './pages/Home.vue'
 
 // Define your routes…
-Route.view('/', 'Home)
+Route.view('/', Home)
 
 // Export a new router with Routisan’s routes applied.
 export const router = createRouter({
